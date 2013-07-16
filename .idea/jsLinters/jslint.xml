@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JSLintConfiguration">
+    <option continue="true" />
+    <option devel="true" />
+    <option eqeq="true" />
+    <option evil="true" />
+    <option indent="4" />
+    <option maxerr="50" />
+    <option node="true" />
+    <option plusplus="true" />
+    <option todo="true" />
+    <option unparam="true" />
+    <option vars="true" />
+  </component>
+</project>
+
