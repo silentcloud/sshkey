@@ -12,8 +12,6 @@
 
 ### 从 Github 安装
 
-可以体验开发中的最新功能
-
     $ git clone git@github.com:silentcloud/sshkey.git
     $ cd sshkey
     $ npm install -g
