@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+var commander = require('commander'),
+    colors = require('colors');
+
+commander.
+  version(require('../package').version.green).
+  usage('[options]').
+  option('-s, --server <server>', 'server name').
+  option('-p, --port [port]',   'server port[default 22],optional argument').
+  option('-u, --user <user>', 'username to ssh server').
+  option('-a, --alias [alias]', 'alias name for server,optional argument').
+  parse(process.argv);
+
+// output help and exit if no args found
+if (!(commander.server && commander.user)) {
+    commander.help();
+}
+
+var sshkey = require('../lib/sshkey');
+sshkey.init();
