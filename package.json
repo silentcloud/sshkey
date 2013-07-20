@@ -1,7 +1,7 @@
 {
   "name": "sshkey",
   "version": "0.0.1",
-  "description": "pass sshkey to server , ssh convenience ",
+  "description": "transfer 'id_rsa.pub' content to server , ssh convenience ",
   "main": "./lib/sshkey.js",
   "scripts": {
   },
