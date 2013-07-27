@@ -1,6 +1,6 @@
 # sshkey
 
-将本机的ssh key传入远程服务器，并写入config，避免以后输入服务器密码登录。
+将本机的ssh key传入远程服务器，避免以后输入服务器密码登录。
 
 ---
 
@@ -26,17 +26,13 @@
 
 登录服务器用户名
 
-#### -p , --port 可选参数，默认端口 22
-
-服务器端口
-
 #### -a , --user  可选参数，默认为服务器名称
 
 服务器别名
 
 ## 3. 实例
 
-    $ sshkey -s 192.168.1.1 -u root -p 8000 -a s192
+    $ sshkey -s 192.168.1.1 -u root -a s192
     root@192.168.1.1's password:****
     Authorized info uploads success!
     please use 'ssh s192' command to login in server!
