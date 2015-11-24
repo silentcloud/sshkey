@@ -16,26 +16,26 @@
     $ cd sshkey
     $ npm install -g
 
-## 2. 命令行配置项
+## 2. 输入项说明
 
-#### -s , --server 必备参数
+#### `hostname` 服务器名称
 
-服务器名称
+#### `user`  登录服务器用户名
 
-#### -u , --user  必备参数
+#### `port`  端口
 
-登录服务器用户名
-
-#### -a , --alias  可选参数，默认为服务器名称
-
-服务器别名
+#### `alias`  ssh 别名
 
 ## 3. 实例
 
-    $ sshkey -s 192.168.1.1 -u root -a s192
+    $ sshkey
+      prompt: hostname:  192.168.1.1
+      prompt: user:  root
+      prompt: port:  22
+      prompt: alias:  local
     root@192.168.1.1's password:****
     Authorized info uploads success!
-    please use 'ssh s192' command to login in server!
-    $ ssh s192
+    please use 'ssh local' command to login in server!
+    $ ssh local
 
 

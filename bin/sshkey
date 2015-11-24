@@ -4,14 +4,6 @@ var commander = require('commander'),
 
 commander.
   version(require('../package').version.green).
-  usage('[options]').
-  option('-s, --server <server>', 'server name').
-  option('-u, --user <user>', 'username to ssh server').
-  option('-a, --alias [alias]', 'alias name for server,optional argument').
   parse(process.argv);
-
-if (!(commander.server && commander.user)) {
-    commander.help();
-}
 
 require('../index');

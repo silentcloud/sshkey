@@ -1,11 +1,9 @@
 {
   "name": "sshkey",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "transfer 'id_rsa.pub' content to server , ssh convenience ",
   "main": "./lib/sshkey.js",
-  "scripts": {
-  },
-  "bin" : {
+  "bin": {
     "sshkey": "./bin/sshkey"
   },
   "repository": {
@@ -13,16 +11,19 @@
     "url": "https://github.com/silentcloud/sshkey"
   },
   "keywords": [
-    "sshkey","ssh","authorized_keys"
+    "sshkey",
+    "ssh",
+    "authorized_keys"
   ],
   "dependencies": {
     "colors": "~0.6.0",
-    "commander": "~2.0.0"
+    "commander": "~2.0.0",
+    "prompt": "~0.2.14"
   },
   "author": "silentcloud",
   "license": "MIT",
-  "bugs" : {
-    "url" : "https://github.com/silentcloud/sshkey" ,
-    "email" : "rjmuqiang@gmail.com"
+  "bugs": {
+    "url": "https://github.com/silentcloud/sshkey",
+    "email": "rjmuqiang@gmail.com"
   }
 }
