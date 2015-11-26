@@ -1,6 +1,6 @@
 {
   "name": "sshkey",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "transfer 'id_rsa.pub' content to server , ssh convenience ",
   "main": "./lib/sshkey.js",
   "bin": {
@@ -18,7 +18,7 @@
   "dependencies": {
     "colors": "~0.6.0",
     "commander": "~2.0.0",
-    "prompt": "~0.2.14"
+    "inquirer": "^0.11.0"
   },
   "author": "silentcloud",
   "license": "MIT",
